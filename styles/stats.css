@@ -1,0 +1,194 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+    height: 100%;
+  }
+  
+  /* Header */
+  header {
+    background: #fff;
+    padding: 10px 60px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #e60000;
+  }
+  
+  .user {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 40px 60px;
+    flex: 1;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto 100px;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Cards */
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .card .value {
+    font-size: 1.6rem;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  /* Charts Section */
+  .chart-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
+  
+  /* Bar Chart */
+  .bar-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 280px;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .bar {
+    background-color: #4CAF50;
+    color: white;
+    width: 12%;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Pie Chart Placeholder */
+  .pie-chart {
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(
+      #4CAF50 0% 40%,
+      #2196F3 40% 70%,
+      #FFC107 70% 100%
+    );
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Bank Details */
+  .bank-details {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+  }
+  
+  .bank-details h3 {
+    margin-bottom: 20px;
+  }
+  
+  .bank-details p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* footer */
+  footer {
+    margin-top: auto; /* pushes the footer to the bottom when not fixed */
+  }
+  
+  footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* space between icons */
+    padding: 14px 0;
+    background: #f10606;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    
+  }
+  
+  footer nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #f10606;
+    background: white;
+    border-radius: 50%;       /* Circle */
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+  
+  footer nav a:hover {
+    transform: scale(1.1);
+  }
+  
+  footer nav a.center {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  footer nav a.active {
+    outline: 2px solid yellow;
+  }
+  
+  

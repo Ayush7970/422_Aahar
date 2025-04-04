@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+
+
+  /* Header */
+  header {
+    background: #fff;
+    padding: 17px 60px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #e60000;
+  }
+  
+  .user {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation styling */
+  nav {
+    background: #f10606;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 60px; /* ⬅️ Increased spacing between nav items */
+    padding: 15px 0;
+  }
+  
+  /* .nav-links li {
+     no need for margin anymore due to gap 
+  } 
+
+  */
+  
+  .nav-links a {
+    color: rgb(248, 246, 246); /* ⬅️ Changed color to red */
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 40px 85px;
+    transition: color 0.3s ease;
+  }
+  
+  /* .nav-links a.active {
+    border-bottom: 2px solid red;
+  } */
+  
+
+  
+  main {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .account-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .account-card p {
+    margin: 10px 0;
+  }
+  
+  .account-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .stats {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+    height: 500px;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .bar {
+    width: 14%;
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+  }
+  
+  
+  /* css for stats card  */
+
+
+
+  
+  
+
+  /*  Footer */
+
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background: white;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer nav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+  }
+  
+  footer nav a.active {
+    color: red;
+  }
+  
+  footer nav a.center {
+    font-size: 28px;
+  }
+  
+
+
+  .form-card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-card h2 {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 60px;
+  }
+  
+  .post-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .post-btn:hover {
+    background-color: #45a045;
+  }
+
+
+  /* footer */
+  footer {
+    margin-top: auto; /* pushes the footer to the bottom when not fixed */
+  }
+  
+  footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* space between icons */
+    padding: 14px 0;
+    background: #f10606;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    
+  }
+  
+  footer nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #f10606;
+    background: white;
+    border-radius: 50%;       /* Circle */
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+  
+  footer nav a:hover {
+    transform: scale(1.1);
+  }
+  
+  footer nav a.center {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  footer nav a.active {
+    outline: 2px solid yellow;
+  }
+  
+  
+  
