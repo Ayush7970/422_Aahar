@@ -10,7 +10,7 @@
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: #f0f0f0;
     color: #121010;
-    line-height: 1.6;
+    line-height: 1.0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
