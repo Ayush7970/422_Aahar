@@ -182,7 +182,8 @@
     align-items: center;
     gap: 40px; /* space between icons */
     padding: 14px 0;
-    background: #f10606;
+    background: #ed003b;
+ 
     border-top: 1px solid #ccc;
     position: fixed;
     bottom: 0;
@@ -194,7 +195,7 @@
   footer nav a {
     text-decoration: none;
     font-size: 22px;
-    color: #f10606;
+    color: #9ff106;
     background: white;
     border-radius: 50%;       /* Circle */
     width: 45px;
@@ -219,5 +220,13 @@
   footer nav a.active {
     outline: 2px solid yellow;
   }
+
   
+  main {
+    padding-bottom: 140px; /* 👈 Prevents overlap by the fixed footer */
+  }
+  
+  html {
+    scroll-padding-bottom: 150px; /* 👈 Ensures smooth scrolling to last field */
+  }
   

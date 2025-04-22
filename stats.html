@@ -18,37 +18,36 @@
     <section class="card-section">
       <div class="card">
         <h3>Total Dishes Sold</h3>
-        <div class="value">1,245</div>
+        <div class="value" id="total-sold">...</div>
       </div>
       <div class="card">
         <h3>Total Revenue</h3>
-        <div class="value">$4,520</div>
+        <div class="value" id="total-revenue">...</div>
       </div>
       <div class="card">
         <h3>Most Popular Dish</h3>
-        <div class="value">Burger 🍔</div>
+        <div class="value" id="popular-dish">...</div>
       </div>
       <div class="card">
         <h3>Average Order Value</h3>
-        <div class="value">$18.70</div>
-      </div>
+        <div class="value" id="avg-order">...</div>
+      </div>      
     </section>
 
     <!-- Charts -->
-    <section class="chart-section">
-      <!-- Bar Chart -->
-      <div class="bar-chart">
-        <div class="bar" style="height: 60%;">Jan</div>
-        <div class="bar" style="height: 80%;">Feb</div>
-        <div class="bar" style="height: 70%;">Mar</div>
-        <div class="bar" style="height: 90%;">Apr</div>
-        <div class="bar" style="height: 50%;">May</div>
-        <div class="bar" style="height: 75%;">Jun</div>
-      </div>
 
-      <!-- Pie Chart Placeholder -->
-      <div class="pie-chart">Sales %</div>
+    <!-- Charts -->
+    <section class="chart-section">
+      <div class="chart-card">
+        <h3>Dish Sales Overview</h3>
+        <div class="charts-row">
+          <canvas id="barChart"></canvas>
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
     </section>
+
+
 
     <!-- Bank Details -->
     <section class="bank-details">
@@ -69,5 +68,9 @@
       <a href="stats.html" class="active" title="Stats">📊</a>
     </nav>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/stats.js"></script>
+
 </body>
 </html>
