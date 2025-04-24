@@ -50,13 +50,13 @@
           <input type="time" id="time">
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="quantity">Quantity:</label>
           <input type="number" id="quantity" min="1">
-        </div>
+        </div> -->
 
         <div class="form-group">
-          <label for="diet">Diet:</label>
+          <label for="diet">Dietary Restrictions:</label>
           <input type="text" id="diet">
         </div>
 
@@ -78,9 +78,18 @@
 
   <footer>
     <nav>
-      <a href="index.html">🍽️</a>
-      <a href="adding.html" class="center">➕</a>
-      <a href="stats.html">📊</a>
+      <div class="nav-item">
+        <a href="index.html" title="Listings">🍽️</a>
+        <span class="tooltip">View Listings</span>
+      </div>
+      <div class="nav-item">
+        <a href="adding.html" class="center" title="Add New">➕</a>
+        <span class="tooltip">Add a New Listing</span>
+      </div>
+      <div class="nav-item">
+        <a href="stats.html" class="active" title="Stats">📊</a>
+        <span class="tooltip">Check Stats</span>
+      </div>
     </nav>
   </footer>
 

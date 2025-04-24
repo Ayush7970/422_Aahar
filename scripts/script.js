@@ -120,18 +120,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 8,
-      name: "Burger",
+      name: "Pasta",
       quantity: 2,
       sold: 10,
       expiry: "2025-03-09",
       time: "23:00",
-      price: "$3.99",
-      image: "images/burger.jpg",
+      price: "$7.99",
+      image: "images/pasta.webp",
       street: "12 King St",
       city: "Chicago",
       zipcode: "60601",
       diet: "Non-Veg",
-      comments: "Double patty with crispy bacon"
+      comments: "Creamy tomato pasta with grilled chicken and herbs"
     }
   ];
 
@@ -175,14 +175,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const qtyBtns = listing.querySelectorAll(".qty-btn");
     const qtySpan = listing.querySelector(".qty");
 
-    qtyBtns[0].addEventListener("click", () => {
+    const updateQuantity = (delta) => {
       let val = parseInt(qtySpan.textContent);
-      if (val > 0) qtySpan.textContent = val - 1;
-    });
-
-    qtyBtns[1].addEventListener("click", () => {
-      let val = parseInt(qtySpan.textContent);
-      qtySpan.textContent = val + 1;
-    });
+      val = Math.max(0, val + delta);
+      qtySpan.textContent = val;
+    
+      const id = parseInt(listing.querySelector(".add").dataset.id);
+      let listings = JSON.parse(localStorage.getItem("listings")) || [];
+      let target = listings.find(l => l.id === id);
+      if (target) {
+        target.quantity = val;
+        localStorage.setItem("listings", JSON.stringify(listings));
+      }
+    };
+    
+    qtyBtns[0].addEventListener("click", () => updateQuantity(-1));
+    qtyBtns[1].addEventListener("click", () => updateQuantity(+1));
+    
   });
 });
+
+

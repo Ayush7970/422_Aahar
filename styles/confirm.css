@@ -129,4 +129,33 @@ body {
   footer nav a.active {
     outline: 2px solid yellow;
   }
+
+
+  .nav-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: 65px;
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1001;
+  }
+  
+  .nav-item:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
   

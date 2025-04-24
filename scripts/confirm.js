@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("price").value = item.price || "";
     document.getElementById("expiry").value = item.expiry || "";
     document.getElementById("time").value = item.time || "";
-    document.getElementById("quantity").value = item.quantity || 1;
+    // document.getElementById("quantity").value = item.quantity || 1;
     document.getElementById("diet").value = item.diet || "";
     document.getElementById("comments").value = item.comments || "";
   
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         price: document.getElementById("price").value,
         expiry: document.getElementById("expiry").value,
         time: document.getElementById("time").value,
-        quantity: parseInt(document.getElementById("quantity").value),
+        // quantity: item.quantity,
         diet: document.getElementById("diet").value,
         comments: document.getElementById("comments").value,
         image: newImage || item.image // Use new image only if valid

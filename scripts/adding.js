@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const file = e.target.files[0];
       if (!file) return;
   
-      // ✅ Size check
+      // Size check
       if (file.size > 150000) {
         alert("Image too large. Please upload a file under 150 KB.");
         imageInput.value = "";
         return;
       }
   
-      // ✅ Dimension check
+      // Dimension check
       const img = new Image();
       const reader = new FileReader();
   

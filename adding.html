@@ -17,27 +17,27 @@
       <form id="add-form">
         <div class="form-group">
           <label for="name">Name of Food:</label>
-          <input type="text" id="name" required>
+          <input type="text" id="name" placeholder="e.g., Paneer Tikka" required>
         </div>
 
         <div class="form-group">
           <label for="street">Street Address:</label>
-          <input type="text" id="street">
+          <input type="text" id="street" placeholder="e.g., 123 King Street">
         </div>
 
         <div class="form-group">
           <label for="city">City:</label>
-          <input type="text" id="city">
+          <input type="text" id="city" placeholder="e.g., Chicago">
         </div>
 
         <div class="form-group">
           <label for="zipcode">Zipcode:</label>
-          <input type="text" id="zipcode">
+          <input type="text" id="zipcode" placeholder="e.g., 60601">
         </div>
 
         <div class="form-group">
           <label for="price">Price:</label>
-          <input type="text" id="price" required>
+          <input type="text" id="price" placeholder="e.g., 7.99" required>
         </div>
 
         <div class="form-group">
@@ -52,17 +52,17 @@
 
         <div class="form-group">
           <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" min="1" required>
+          <input type="number" id="quantity" min="1" placeholder="e.g., 5" required>
         </div>
 
         <div class="form-group">
-          <label for="diet">Diet:</label>
-          <input type="text" id="diet">
+          <label for="diet">Dietary Restrictions: <span style="font-weight: normal; font-size: 0.9em; color: #666;">(Explain clearly, e.g., contains nuts, dairy-free, vegan-friendly)</span></label>
+          <input type="text" id="diet" placeholder="e.g., Contains peanuts and dairy. Not suitable for vegans.">
         </div>
 
         <div class="form-group">
           <label for="comments">Details:</label>
-          <textarea id="comments"></textarea>
+          <textarea id="comments" placeholder="e.g., Spicy grilled paneer served with mint chutney and salad."></textarea>
         </div>
 
         <div class="form-group">
@@ -77,9 +77,18 @@
 
   <footer>
     <nav>
-      <a href="index.html">🍽️</a>
-      <a href="adding.html" class="center">➕</a>
-      <a href="stats.html">📊</a>
+      <div class="nav-item">
+        <a href="index.html" title="Listings">🍽️</a>
+        <span class="tooltip">View Listings</span>
+      </div>
+      <div class="nav-item">
+        <a href="adding.html" class="center" title="Add New">➕</a>
+        <span class="tooltip">Add a New Listing</span>
+      </div>
+      <div class="nav-item">
+        <a href="stats.html" class="active" title="Stats">📊</a>
+        <span class="tooltip">Check Stats</span>
+      </div>
     </nav>
   </footer>
 
